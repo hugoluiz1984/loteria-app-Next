@@ -7,7 +7,7 @@ function List(props){
       <div className="lista">
         <div className={props.showUl ? styles.show : styles.unShow}>
 
-          {props.numSorte.map(i=><div key={[i]} className={props.nome}>{[i]}</div>)}
+          {props && props.numSorte.map(i=><div key={[i]} className={props.nome}>{[i]}</div>)}
         </div>  
           
     

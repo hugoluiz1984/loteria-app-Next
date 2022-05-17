@@ -39,12 +39,13 @@ export default function Home() {
 
           <Link
             href="/lotomania"
-            className={styles.card}
+            className={styles.card} 
           >
             <a className={styles.card}><h2>Lotomania &rarr;</h2>
             <p>
             A Lotomania é fácil de jogar e de ganhar: basta escolher 50 números .
             </p></a>
+            
           </Link>
         </div>
       </main>

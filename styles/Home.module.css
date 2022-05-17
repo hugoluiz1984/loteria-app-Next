@@ -1,15 +1,17 @@
+
 .container {
   padding: 0 2rem;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 90vh;
+  padding: 4rem ;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .footer {
@@ -74,6 +76,8 @@
 }
 
 .card {
+  width: 300px;
+  height: 250px;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -108,9 +112,144 @@
   margin-left: 0.5rem;
 }
 
+.linha{
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.unShow{
+  display:none;
+}
+.show{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  gap: 10px;
+}
+
+.numeroSorte{
+  
+  width:30px;
+  height: 30px;
+  font-size:19px;
+  /*border: 2px solid red;*/
+  border: none;
+  background-color: #1d7a06;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  margin: 2px;
+
+}
+.numeroSorteQuina{
+  width:30px;
+  height: 30px;
+  font-size:19px;
+  /*border: 2px solid red;*/
+  border: none;
+  background-color: #260085;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  margin: 2px;
+}
+.numeroSorteLoto{
+  width:30px;
+  height: 30px;
+  font-size:20px;
+  /*border: 2px solid red;*/
+  border: none;
+  background-color: #930089;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 2px;
+}
+.btn_cel {
+  height: 20px;
+  width: 20px;
+  color: gray;
+  border-radius:50%;
+  cursor: pointer;
+  border: 1px solid gray;;
+  
+  text-align: center;
+  justify-content:center;
+  display:none;
+
+}
+
+.btn {
+  width:max-content;
+  display: inline-block;
+  color: #FFF;
+  padding: 0.75rem 1.2rem;
+  border-radius:4px;
+  cursor: pointer;
+  border: 1px solid #1d7a06;
+  transition: all 400ms ease;
+  background: #1d7a06;
+}
+
+.btn:hover {
+  background: #ccc;
+  color: #133316;
+  border-color: transparent;
+}
+
+.btn_primary {
+ 
+  color: #fff;
+}
+.input{
+  width: 40px;
+  border: none;
+}
+
+.botoes{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+.grid_container {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .show{
+    max-width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    gap: 10px;
+  }
+  .btn_cel {
+    display:flex;
+    
+  }
+  .grid_container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    grid-gap: 10px;
+    gap: 10px;
+  }
+ 
+}
+
+@media (max-height: 300px) {
+  .main {
+    min-height: 100vh;
   }
 }

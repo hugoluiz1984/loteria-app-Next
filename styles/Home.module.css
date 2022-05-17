@@ -262,9 +262,20 @@
   margin-top: 10px;
 }
 @media (max-width: 600px) {
+  .main {
+      padding: 0;
+        padding-top: 4rem ;
+  }
+  .nav {
+
+    padding: .4rem;
+    max-width: 100%;
+    gap: .5px;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
+    padding: auto;
   }
   .show{
     max-width: 100%;
@@ -283,6 +294,11 @@
     grid-template-columns: auto auto auto auto auto auto ;
     grid-gap: 10px;
     gap: 10px;
+  }
+  .caixa{
+    
+    width:300px;
+    
   }
  
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,52 +14,52 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-           <a href="https://nextjs.org">Loterias da Sorte!</a>
+           <Link href="/">Loterias da Sorte!</Link>
         </h1>
 
 
         <div className={styles.grid}>
-          <a href="/mega" className={styles.card}>
-            <h2>Mega-Sena &rarr;</h2>
-            <p>A Mega-Sena paga milhões para o acertador dos 6 números sorteados. </p>
-          </a>
+         <Link href="/mega" className={styles.card}>
+            <a className={styles.card}><h2>Mega-Sena &rarr;</h2>
+            <p>A Mega-Sena paga milhões para o acertador dos 6 números sorteados. </p></a>
+          </Link>
 
-          <a href="/lotofacil" className={styles.card}>
-            <h2>Loto-Fácil &rarr;</h2>
-            <p>A Lotofácil é, como o próprio nome diz, fácil de apostar e principalmente de ganhar. </p>
-          </a>
+          <Link href="/lotofacil" className={styles.card}>
+          <a className={styles.card}><h2>Loto-Fácil &rarr;</h2>
+            <p>A Lotofácil é, como o próprio nome diz, fácil de apostar e principalmente de ganhar. </p></a>
+          </Link>
 
-          <a
+          <Link
             href="/quina"
             className={styles.card}
           >
-            <h2>Quina &rarr;</h2>
-            <p>Com a Quina basta marcar de 5 a 15 números dentre os 80 disponíveis no volante e torcer.</p>
-          </a>
+            <a className={styles.card}><h2>Quina &rarr;</h2>
+            <p>Com a Quina basta marcar de 5 a 15 números dentre os 80 disponíveis no volante e torcer.</p></a>
+          </Link>
 
-          <a
+          <Link
             href="/lotomania"
             className={styles.card}
           >
-            <h2>Lotomania &rarr;</h2>
+            <a className={styles.card}><h2>Lotomania &rarr;</h2>
             <p>
             A Lotomania é fácil de jogar e de ganhar: basta escolher 50 números .
-            </p>
-          </a>
+            </p></a>
+          </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
+        <Link
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
-        >
+        ><a>
           Powered by Hugo Gama{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+          </span></a>
+        </Link>
       </footer>
     </div>
   )

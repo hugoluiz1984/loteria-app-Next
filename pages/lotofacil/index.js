@@ -65,7 +65,7 @@ function Mega({ data }){
         <div >
           <List numSorte={numSorte} showUl={showUl} nome={styles.numeroSorte}></List>
         </div>
-        <div >
+        <div className={styles.caixa}>
             <div>Último sorteio: {data.numero}</div>  <div>Data:{data.dataApuracao}</div>
             <div className={styles.grid_container}>
                 {data.listaDezenas.map((post) => (
@@ -73,14 +73,14 @@ function Mega({ data }){
                         </div>
                 ))}
                 </div>
-            <p>{data.acumulado ? `Acumulado, `: ''} Valor Estimado para o próximo concurso: R${data.valorEstimadoProximoConcurso}</p>
+            <p>{data.acumulado ? `Acumulado, `: ''} Valor Estimado para o próximo concurso: {data.valorEstimadoProximoConcurso.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
   
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Gerador } from '../api/Gerador';
-import List from '../components/List';
+import List from '../api/List';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import Head from 'next/head'

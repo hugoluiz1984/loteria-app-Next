@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Gerador } from '../components/Gerador';
+import { Gerador } from '../api/Gerador';
 import List from '../components/List';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';

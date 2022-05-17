@@ -221,7 +221,39 @@
   grid-gap: 10px;
   gap: 10px;
 }
+.nav {
+  background: rgba(0,0,0,0.3);
+  width:max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:10px;
+  display:flex;
+  gap: 0.8rem;
+  border-radius:3rem;
+  backdrop-filter: blur(15px);
+}
 
+.nav a{
+  background:transparent;
+  padding:0.4rem;
+  border-radius:3rem;
+  display:flex;
+  color:white;
+  font-size:1rem ;
+}
+
+.nav a:hover{
+  background: rgba(0,0,0,0.3);
+}
+
+.nav a.active{
+  background: gray;
+  color: black;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

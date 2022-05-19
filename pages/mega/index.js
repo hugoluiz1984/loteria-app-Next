@@ -66,7 +66,8 @@ function Mega({ data }){
           <List numSorte={numSorte} showUl={showUl} nome={styles.numeroSorte}></List>
         </div>
         <div className={styles.caixa}>
-            <div>Último sorteio: {data.numero}</div>  <div>Data:{data.dataApuracao}</div>
+            <h3>Resultado</h3>
+            <p>Último sorteio: {data.numero}</p>  <p>Data:{data.dataApuracao}</p>
             <div className={styles.grid_container}>
                 {data.listaDezenas.map((post) => (
                     <div key={post} >{post.substr(1)}

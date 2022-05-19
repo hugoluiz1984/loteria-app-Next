@@ -167,6 +167,18 @@
   text-align: center;
   margin: 2px;
 }
+.numeroSorteLotoMania{
+  width:30px;
+  height: 30px;
+  font-size:20px;
+  /*border: 2px solid red;*/
+  border: none;
+  background-color: #c97d0b;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 2px;
+}
 .btn_cel {
   height: 20px;
   width: 20px;
@@ -188,14 +200,14 @@
   padding: 0.75rem 1.2rem;
   border-radius:4px;
   cursor: pointer;
-  border: 1px solid #1d7a06;
+  border: 1px solid #777777;
   transition: all 400ms ease;
-  background: #1d7a06;
+  background: #777777;
 }
 
 .btn:hover {
   background: #ccc;
-  color: #133316;
+  color: #313131;
   border-color: transparent;
 }
 
@@ -258,7 +270,7 @@
   background: rgba(0,0,0,0.1);
   width:max-content;
   border-radius:10px;
-  padding:0.4rem;
+  padding:20px;
   margin-top: 10px;
 }
 @media (max-width: 600px) {

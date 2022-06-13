@@ -194,7 +194,8 @@
 }
 
 .btn {
-  width:max-content;
+  width:10px;
+  height: 10px;
   display: inline-block;
   color: #FFF;
   padding: 0.75rem 1.2rem;

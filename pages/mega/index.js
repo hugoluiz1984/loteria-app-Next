@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import { Gerador } from '../api/Gerador';
-import List from '../api/List';
+import { Gerador } from '../../components/Gerador';
+import List from '../../components/List';
 import Image from 'next/image';
 import styles from '../../styles/Home.module.css';
 import Head from 'next/head'
-import Nav from '../api/Nav'
+import Nav from '../../components/Nav'
 
 function Mega({ data }){
 

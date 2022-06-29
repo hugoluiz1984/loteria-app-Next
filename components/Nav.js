@@ -1,24 +1,21 @@
-import React from 'react';
-import styles from '../styles/Home.module.css'
-import { useState } from 'react';
-import Link from 'next/link'
+import React from 'react'
+import { navLinks } from './../utils/data';
+import { useRouter } from 'next/router'
 
-const Nav = () => {
-  const [activeNav, setActiveNav] = useState('/')
+export default function NavBar() {
+    const router = useRouter();
+
+    let caminho = router.pathname
   return (
-    <nav className={styles.nav}>
-      <Link href="/" className={activeNav === '/'? styles.active: ''} 
-      onClick={()=> setActiveNav('/')}><a>Home</a></Link>
-      <Link href="/mega" className={activeNav === '/mega'? styles.active: ''} 
-      onClick={()=> setActiveNav('/mega')} ><a>Mega</a></Link>
-      <Link href="/lotofacil" className={activeNav === '/lotofacil'? styles.active: ''} 
-      onClick={()=> setActiveNav('/lotofacil')}><a>Lotofácil</a></Link>
-      <Link href="/lotomania" className={activeNav === '/lotomania'? styles.active: ''} 
-      onClick={()=> setActiveNav('/lotomania')}><a>Lotomania</a></Link>
-      <Link href="/quina" className={activeNav === '/quina'? styles.active: ''} 
-      onClick={()=> setActiveNav('/quina')}><a>Quina</a></Link>
-    </nav>
+    <div>
+        <ul className="nav nav-pills">
+            { navLinks.map((link, index)=>{
+               return (
+                <li className="nav-item" key={index}>
+                    <a href={link.path} className={caminho==link.path?'nav-link active':"nav-link"}>{link.label}</a>
+                </li>)
+            })}
+        </ul>
+    </div>
   )
 }
-
-export default Nav

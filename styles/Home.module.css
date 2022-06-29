@@ -186,8 +186,7 @@
   border-radius:50%;
   cursor: pointer;
   border: 1px solid gray;;
-  
-  text-align: center;
+  align-items: center;
   justify-content:center;
   display:none;
 
@@ -269,10 +268,14 @@
 }
 .caixa{
   background: rgba(0,0,0,0.1);
-  width:max-content;
+  box-sizing: border-box;
+  width:90%;
+  max-width: 600px;
   border-radius:10px;
   padding:20px;
-  margin-top: 10px;
+  margin: 10px auto 10px auto;
+
+
 }
 @media (max-width: 600px) {
   .main {
@@ -308,9 +311,7 @@
     grid-gap: 10px;
     gap: 10px;
   }
-  .caixa{
-    width:300px;
-  }
+
  
 }
 
